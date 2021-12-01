@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HipotenusHesaplama {
+public class UcgenHesaplamalari {
     public static void main(String[] args) {
         double birinciKenar, ikinciKenar, ucuncuKenar;
         Scanner input = new Scanner(System.in);
