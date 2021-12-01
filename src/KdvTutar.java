@@ -6,16 +6,13 @@ public class KdvTutar {
         Scanner input = new Scanner(System.in);
         System.out.println("Ücret tutarını giriniz:");
         tutar= input.nextDouble();
-        if ( tutar > 0){
-            if (tutar < 1000) {
+        if ((tutar > 0) && (tutar <= 1000)){
                 double kdvTutar = tutar * kucukKdvOran;
                 double kdvliTutar = tutar + kdvTutar ;
                 System.out.println("KDV'siz Tutar: " + tutar);
                 System.out.println("KDV Oranı : " + kucukKdvOran);
                 System.out.println("KDV Tutarı : " +kdvTutar);
                 System.out.println("KDV'li Tutar : " + kdvliTutar);
-
-            }
         }
         if ( tutar > 1000) {
             double kdvTutar = tutar * buyukKdvOran ;
