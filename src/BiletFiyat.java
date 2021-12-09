@@ -8,26 +8,26 @@ public class BiletFiyat {
         try {
             double age, range, travelType, ticketCost;
 
-            Scanner scan = new Scanner(System.in);
+            Scanner input = new Scanner(System.in);
 
             System.out.println("Mesafeyi Giriniz (KM) : ");
-            range = scan.nextDouble();
+            range = input.nextDouble();
             System.out.println("Yaşınızı Giriniz : ");
-            age = scan.nextDouble();
+            age = input.nextDouble();
             System.out.println("Yolculuk Türünüzü Giriniz (1 yada 2) : ");
-            travelType = scan.nextDouble();
+            travelType = input.nextDouble();
             while (!(range >= 0)) {
                 System.out.println("Yanlış Karakter Girişi Yaptınız. Lütfen Tekrar Deneyiniz.");
-                range = scan.nextDouble();
+                range = input.nextDouble();
 
             }
             while (!(age >= 1)) {
                 System.out.println("Yanlış Karakter Girişi Yaptınız. Lütfen Tekrar Deneyiniz. ");
-                age = scan.nextDouble();
+                age = input.nextDouble();
             }
             while (!((travelType == 1) || (travelType == 2))) {
                 System.out.println("Yanlış Karakter Girişi Yaptınız. Lütfen Tekrar Deneyiniz. ");
-                travelType = scan.nextDouble();
+                travelType = input.nextDouble();
             }
 
             ticketCost = range / 10;
