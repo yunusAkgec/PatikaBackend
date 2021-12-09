@@ -9,7 +9,7 @@ public class BolunenSayilar {
         System.out.print("Sayıyı Giriniz :");
         k = input.nextInt();
 
-        for (int i = 1 ; i <= k ; i++){
+        for (int i = 0 ; i <= k ; i++){
             if ((i % 3 == 0) && (i % 4 == 0)){
                 toplama = toplama + i;
                 a++;
